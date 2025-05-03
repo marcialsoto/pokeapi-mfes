@@ -6,6 +6,9 @@ module.exports = withNativeFederation({
 
   exposes: {
     './Component': './projects/app-pokedex/src/app/app.component.ts',
+    './Pokedex': './projects/app-pokedex/src/app/pokedex/pages/pokedex-list/pokedex-list.component.ts',
+    './PokedexDetail': './projects/app-pokedex/src/app/pokedex/pages/pokedex-detail/pokedex-detail.component.ts',
+    './routes': './projects/app-pokedex/src/app/app.routes.ts',
   },
 
   shared: {
@@ -22,5 +25,5 @@ module.exports = withNativeFederation({
 
   // Please read our FAQ about sharing libs:
   // https://shorturl.at/jmzH0
-  
+
 });
