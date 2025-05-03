@@ -6,6 +6,9 @@ module.exports = withNativeFederation({
 
   exposes: {
     './Component': './projects/app-types/src/app/app.component.ts',
+    './TypesListComponent': './projects/app-types/src/app/types/pages/types-list/types-list.component.ts',
+    './TypesFeaturedComponent': './projects/app-types/src/app/types/pages/types-featured/types-featured.component.ts',
+    './routes': './projects/app-types/src/app/app.routes.ts',
   },
 
   shared: {
@@ -22,5 +25,5 @@ module.exports = withNativeFederation({
 
   // Please read our FAQ about sharing libs:
   // https://shorturl.at/jmzH0
-  
+
 });

@@ -15,4 +15,12 @@ export const routes: Routes = [
                 exposedModule: './routes'
             }).then(m => m.routes),
     },
+    {
+        path: 'tipos',
+        loadChildren: () =>
+            loadRemoteModule({
+                remoteName: 'appTypes',
+                exposedModule: './routes'
+            }).then(m => m.routes),
+    },
 ];

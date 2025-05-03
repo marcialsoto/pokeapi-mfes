@@ -1,3 +1,4 @@
 {
-	"appPokedex": "http://localhost:4201/remoteEntry.json"
+	"appPokedex": "http://localhost:4201/remoteEntry.json",
+	"appTypes": "http://localhost:4202/remoteEntry.json"
 }

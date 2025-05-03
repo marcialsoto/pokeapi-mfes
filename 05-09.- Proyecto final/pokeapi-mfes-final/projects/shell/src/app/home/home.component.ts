@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TypesWrapperComponent } from '../wrappers/types-wrapper.component';
+import { FeaturedTypesWrapperComponent } from "../wrappers/featured-types-wrapper.component";
 
 @Component({
   selector: 'app-home',
-  imports: [RouterModule],
+  imports: [RouterModule, TypesWrapperComponent, FeaturedTypesWrapperComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -6,10 +6,6 @@ export const POKEDEX_ROUTES: Routes = [
     {
         path: '',
         component: PokedexListComponent,
-        data: {
-            title: 'Pokédex',
-            description: 'Lista de pokemones'
-        },
     },
     {
         path: ':id',
