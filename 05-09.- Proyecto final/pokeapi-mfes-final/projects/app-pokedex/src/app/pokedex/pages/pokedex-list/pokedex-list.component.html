@@ -1,8 +1,10 @@
-<div *ngFor="let pokemon of pokemonList(); let i = index"
-    class="bg-white shadow-md rounded-xl p-4 text-center hover:shadow-xl transition duration-300 border border-gray-200">
-    <button class="cursor-pointer" mfRouterLink="pokemones/{{ pokemon.name }}" [mfeBase]="'app-pokedex'">
-        <img [src]="getPokemonImage(pokemon)" [alt]="pokemon.name" class="w-24 h-24 mx-auto mb-2" />
-        <div class="text-sm text-gray-400 mb-1">#{{ i + 1 }}</div>
-        <div class="text-lg font-semibold capitalize text-gray-800">{{ pokemon.name }}</div>
-    </button>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div *ngFor="let pokemon of pokemonList(); let i = index"
+        class="bg-white shadow-md rounded-xl p-4 text-center hover:shadow-xl transition duration-300 border border-gray-200">
+        <button class="cursor-pointer w-full" mfRouterLink="pokemones/{{ pokemon.name }}" [mfeBase]="'app-pokedex'">
+            <img [src]="getPokemonImage(pokemon)" [alt]="pokemon.name" class="w-24 h-24 mx-auto mb-2" />
+            <div class="text-sm text-gray-400 mb-1">#{{ i + 1 }}</div>
+            <div class="text-lg font-semibold capitalize text-gray-800">{{ pokemon.name }}</div>
+        </button>
+    </div>
 </div>

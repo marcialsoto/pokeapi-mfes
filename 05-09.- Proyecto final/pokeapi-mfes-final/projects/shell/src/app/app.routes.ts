@@ -23,4 +23,10 @@ export const routes: Routes = [
                 exposedModule: './routes'
             }).then(m => m.routes),
     },
+    {
+        path: 'habilidades',
+        loadComponent: () =>
+            loadRemoteModule('appAbilities', './AbilitiesListComponent')
+                .then(m => m.AbilitiesListComponent)
+    }
 ];

@@ -6,6 +6,9 @@ module.exports = withNativeFederation({
 
   exposes: {
     './Component': './projects/app-abilities/src/app/app.component.ts',
+    './AbilitiesListComponent': './projects/app-abilities/src/app/abilities/pages/abilities-list/abilities-list.component.ts',
+    './AbilitiesFeaturedComponent': './projects/app-abilities/src/app/abilities/pages/abilities-featured/abilities-featured.component.ts',
+    './routes': './projects/app-abilities/src/app/app.routes.ts',
   },
 
   shared: {
@@ -22,5 +25,5 @@ module.exports = withNativeFederation({
 
   // Please read our FAQ about sharing libs:
   // https://shorturl.at/jmzH0
-  
+
 });
